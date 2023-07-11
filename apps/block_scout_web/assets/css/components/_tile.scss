@@ -1,8 +1,10 @@
+$metadap-primary: #FF8F00;
 $tile-type-block-color: $primary !default;
 $tile-type-uncle-color: $cyan !default;
 $tile-type-reorg-color: $purple !default;
 $tile-type-emission-reward-color: $lilac !default;
-$tile-type-transaction-color: $blue !default;
+// $tile-type-transaction-color: $blue !default;
+$tile-type-transaction-color: $metadap-primary !default;
 $tile-type-contract-call-color: $green !default;
 $tile-type-contract-creation-color: $dark-purple !default;
 $tile-type-token-transfer-color: $orange !default;
