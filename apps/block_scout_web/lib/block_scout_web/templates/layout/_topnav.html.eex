@@ -14,6 +14,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <%= link to: webapp_url(@conn) do %>
+          <img href="./static/images/icons/metadap_logo.png" class="navbar-metadap-logo" alt="metadap_logo"></img>
+          <%= gettext("Metadap Home") %>
+        <% end %>
       <ul class="navbar-nav">
         <%= if Application.get_env(:block_scout_web, BlockScoutWeb.WebRouter)[:enabled] do %>
           <li class="nav-item dropdown">
