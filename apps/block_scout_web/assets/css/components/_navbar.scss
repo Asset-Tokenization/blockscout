@@ -301,12 +301,11 @@ $navbar-logo-width: auto !default;
   display: block;
 }
 
-.navbar-metadap-logo {
-  max-width: 128px;
-  width: 128px;
-  height: auto;
+.link-to-home {
+  margin-right: auto;
 }
-a > .navbar-metadap-logo {
-  width: fit-content;
-  display: block;
+
+.navbar-metadap-logo {
+  width: 40px;
+  height: auto;
 }

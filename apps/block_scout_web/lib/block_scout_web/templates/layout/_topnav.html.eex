@@ -13,10 +13,10 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <%= link to: webapp_url(@conn) do %>
-          <img src="<%= static_path(@conn, "/images/icons/metadap_logo.png") %>"  class="navbar-metadap-logo" alt="metadap_logo"></img>
-        <% end %>
+    <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+      <%= link to: webapp_url(@conn), class: "link-to-home" do %>
+        <img src="<%= static_path(@conn, "/images/icons/metadap_logo.png") %>"  class="navbar-metadap-logo" alt="metadap_logo"></img>
+      <% end %>
       <ul class="navbar-nav">
         <%= if Application.get_env(:block_scout_web, BlockScoutWeb.WebRouter)[:enabled] do %>
           <li class="nav-item dropdown">
