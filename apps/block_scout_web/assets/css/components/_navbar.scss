@@ -244,13 +244,10 @@ $header-logo-text-color: #333 !default;
   margin-left: 0;
   flex-shrink: 1;
   display: inline-flex;
-  .navbar-logo {
-    max-width: 100%;
-  }
 }
 
 .navbar-logo {
-  max-height: $navbar-logo-height;
+  height: 40px;
   width: $navbar-logo-width;
 }
 
